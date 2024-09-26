@@ -266,20 +266,24 @@ body .section-hero {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-image: url("/images/6.jpg");
+  
+  /* Correct background image and gradient syntax */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/6.jpg");
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   background-size: cover;
+  background-position: center;
 }
 
 @media only screen and (max-width: 50em) {
   body .section-hero {
-    background-image: url("/images/6.jpg");
-    background-position: bottom, center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/6.jpg");
+    background-position: bottom center;
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
+
 
 body .section-hero .hero-box {
   height: 100%;
